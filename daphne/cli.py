@@ -207,7 +207,7 @@ class CommandLineInterface:
         """
         # Decode args
         args = self.parser.parse_args(args)
-        args.application = 'summon_platform.asgi:websocketsv2'
+        args.application = 'summon_platform.asgi:application'
         # Set up logging
         logging.basicConfig(
             level={
